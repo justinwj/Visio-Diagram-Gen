@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Same framework as the production projects -->
+    <TargetFramework>net48</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <!-- we’ll add .fs files manually -->
+  </PropertyGroup>
+
+  <!-- xUnit + test runner -->
+  <ItemGroup>
+    <PackageReference Include="xunit"                     Version="2.6.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.6.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk"    Version="17.10.0" />
+  </ItemGroup>
+
+  <!-- Reference the F# core library you’re testing -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DiagramCore\DiagramCore.fsproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Match the target you used for the F# core library -->
+    <TargetFramework>net48</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!-- Add MSTest packages -->
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestAdapter"   Version="3.4.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.4.2" />
+  </ItemGroup>
+
+  <!-- Pull in the F# core so you can call it -->
+  <ItemGroup>
+    <ProjectReference Include="..\DiagramCore\DiagramCore.fsproj" />
+  </ItemGroup>
+
+</Project>
