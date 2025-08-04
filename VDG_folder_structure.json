@@ -1,0 +1,141 @@
+import json
+
+# Define the folder structure dictionary
+structure = {
+  "VisioDiagramGenerator": {
+    ".editorconfig": None,
+    ".gitattributes": None,
+    ".gitignore": None,
+    "README.md": None,
+    "CONTRIBUTING.md": None,
+    "CHANGELOG.md": None,
+    "LICENSE": None,
+    "global.json": None,
+    "NuGet.config": None,
+    "Directory.Build.props": None,
+    "Directory.Build.targets": None,
+    "VisioDiagramGenerator.sln": None,
+    "scripts": {
+      "build.bat": None,
+      "release.bat": None,
+      "exportForChatGPT.bat": None,
+      "runGenerator.bat": None,
+      "consolidateForChatGPT.fsx": None
+    },
+    "build": {
+      "build.ps1": None,
+      "release.ps1": None
+    },
+    ".github": {
+      "workflows": {
+        "ci.yml": None
+      }
+    },
+    "docs": {
+      "Architecture.md": None,
+      "Design.md": None,
+      "GettingStarted.md": None,
+      "API.md": None
+    },
+    "src": {
+      "VisioDiagramGenerator": {
+        "VisioDiagramGenerator.csproj": None,
+        "App.config": None,
+        "shapeMapping.json": None,
+        "ThisAddIn.cs": None,
+        "ThisAddIn.Designer.cs": None,
+        "ThisAddIn.manifest": None,
+        "Ribbon.cs": None,
+        "Ribbon.Designer.cs": None,
+        "commands": {
+          "RibbonCommands.cs": None
+        },
+        "Properties": {
+          "AssemblyInfo.cs": None,
+          "Resources.resx": None,
+          "Settings.settings": None
+        },
+        "Config": {
+          "diagramConfig.json": None
+        },
+        "Resources": {
+          "icon16.png": None,
+          "icon32.png": None,
+          "stencilTemplates.vssx": None
+        },
+        "Models": {
+          "CallSite.cs": None,
+          "MasterMeta.cs": None,
+          "DiagramItem.cs": None,
+          "DiagramConnection.cs": None,
+          "DiagramConfig.cs": None
+        },
+        "Providers": {
+          "IMapProvider.cs": None,
+          "CallSiteMapProvider.cs": None,
+          "ProcMapProvider.cs": None,
+          "MasterMetaProvider.cs": None
+        },
+        "Layouts": {
+          "ILayoutAlgorithm.cs": None,
+          "VerticalLayoutAlgorithm.cs": None,
+          "GridLayoutAlgorithm.cs": None,
+          "CircularLayoutAlgorithm.cs": None
+        },
+        "Core": {
+          "DiagramBuilder.cs": None,
+          "DiagramGenerator.cs": None,
+          "Pipeline.cs": None,
+          "VisioService.cs": None
+        },
+        "Export": {
+          "DiagramExporter.cs": None,
+          "ExportFormat.cs": None
+        },
+        "Utilities": {
+          "RegexCallScanner.cs": None,
+          "ComObjectExtensions.cs": None,
+          "LoggingExtensions.cs": None
+        }
+      },
+      "VisioDiagramGenerator.Algorithms": {
+        "VisioDiagramGenerator.Algorithms.fsproj": None,
+        "AST.fs": None,
+        "Parsers.fs": None,
+        "Transformations.fs": None,
+        "LayoutAlgorithms.fs": None,
+        "DataModels.fs": None
+      },
+      "VisioDiagramGenerator.CliFs": {
+        "VisioDiagramGenerator.CliFs.fsproj": None,
+        "Program.fs": None,
+        "ArgParser.fs": None,
+        "GenerateCommand.fs": None,
+        "ExportCommand.fs": None,
+        "Utilities": {
+          "CliLogger.fs": None,
+          "FileBundler.fs": None
+        }
+      }
+    },
+    "tests": {
+      "VisioDiagramGenerator.Tests": {
+        "VisioDiagramGenerator.Tests.csproj": None
+      },
+      "VisioDiagramGenerator.Algorithms.Tests": {
+        "VisioDiagramGenerator.Algorithms.Tests.fsproj": None
+      },
+      "VisioDiagramGenerator.CliFs.Tests": {
+        "VisioDiagramGenerator.CliFs.Tests.fsproj": None,
+        "CliTests.fs": None
+      }
+    }
+  }
+}
+
+# Write to a JSON file
+file_path = '/mnt/data/folder_structure.json'
+with open(file_path, 'w') as f:
+    json.dump(structure, f, indent=2)
+
+file_path
