@@ -1,0 +1,3 @@
+# Guide-post for .gitignore
+# List files and directories that should not be committed, such as build outputs, cache files, and secrets.
+# Keep this list up-to-date to prevent accidental commits.

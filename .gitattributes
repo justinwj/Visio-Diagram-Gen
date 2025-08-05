@@ -1,0 +1,3 @@
+# Guide-post for .gitattributes
+# Configure Git attributes here to ensure consistent behavior (e.g., line endings, diff drivers).
+# Set attributes thoughtfully to support cross-platform development.
