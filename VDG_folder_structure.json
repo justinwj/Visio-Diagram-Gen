@@ -1,6 +1,6 @@
 import json
 
-# Define the folder structure dictionary
+# Defined folder structure dictionary
 structure = {
   "VisioDiagramGenerator": {
     ".editorconfig": None,
@@ -132,10 +132,3 @@ structure = {
     }
   }
 }
-
-# Write to a JSON file
-file_path = '/mnt/data/folder_structure.json'
-with open(file_path, 'w') as f:
-    json.dump(structure, f, indent=2)
-
-file_path
