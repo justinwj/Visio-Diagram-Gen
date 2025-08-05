@@ -9,3 +9,11 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: Transformations
+' Purpose: transform the AST into domain‑specific Models.
+Module Transformations
+    Function ToModel(ast As Object) As Object
+        ' Traverse AST and create Models
+        Return New Object
+    End Function
+End Module

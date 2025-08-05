@@ -8,3 +8,13 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: RegexCallScanner
+' Purpose: scan source files for call site information using regular expressions.
+Module RegexCallScanner
+    Function ScanFile(path As String) As Collection
+        Dim results As New Collection
+        ' Open file and iterate over lines
+        ' If a line matches a call pattern then create a CallSite and add to results
+        Return results
+    End Function
+End Module

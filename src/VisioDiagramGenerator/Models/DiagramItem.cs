@@ -8,3 +8,12 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: DiagramItem
+' Purpose: represent a shape within the diagram.
+Module DiagramItem
+    Public Id As String
+    Public TypeName As String
+    Public Label As String
+    Public X As Double
+    Public Y As Double
+End Module

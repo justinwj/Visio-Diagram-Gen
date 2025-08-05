@@ -9,3 +9,11 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: LayoutAlgorithmsFs
+' Purpose: provide functional layout algorithms.
+Module LayoutAlgorithmsFs
+    Function Apply(name As String, model As Object) As Object
+        ' Pattern match on algorithm name and delegate to GridLayout, CircularLayout, etc.
+        Return New Object
+    End Function
+End Module

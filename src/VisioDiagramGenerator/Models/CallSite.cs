@@ -8,3 +8,11 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: CallSite
+' Purpose: represent a code call site discovered by scanners.
+Module CallSite
+    Public Caller As String
+    Public Callee As String
+    Public FilePath As String
+    Public LineNumber As Integer
+End Module

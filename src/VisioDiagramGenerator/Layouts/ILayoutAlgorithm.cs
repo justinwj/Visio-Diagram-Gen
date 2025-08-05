@@ -8,3 +8,8 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: ILayoutAlgorithm
+' Purpose: define the contract for layout algorithms.
+Module ILayoutAlgorithm
+    Function ComputePositions(items As Collection, conns As Collection) As Collection
+End Module

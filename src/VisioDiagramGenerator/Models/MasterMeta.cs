@@ -8,3 +8,10 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: MasterMeta
+' Purpose: represent metadata for Visio master shapes.
+Module MasterMeta
+    Public Name As String
+    Public Category As String
+    Public IconPath As String
+End Module

@@ -8,3 +8,13 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: ThisAddIn
+' Purpose: entry point for the Visio add‑in; lifecycle management.
+Module ThisAddIn
+    Sub ThisAddIn_Startup()
+        ' Initialize ribbon and services when Visio starts
+    End Sub
+    Sub ThisAddIn_Shutdown()
+        ' Clean up resources on shutdown
+    End Sub
+End Module

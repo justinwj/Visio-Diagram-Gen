@@ -8,3 +8,17 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: RibbonCommands
+' Purpose: centralize command handlers invoked by the ribbon.
+Module RibbonCommands
+    Sub Generate()
+        Dim cfg As DiagramConfig = ConfigLoader.LoadConfig()
+        Dim pipeline As New Pipeline(cfg)
+        pipeline.Run("defaultInput.fs")
+    End Sub
+    Sub Export()
+        Dim diagram As Object = Nothing
+        Dim exporter As New DiagramExporter
+        exporter.Export(diagram, ExportFormat.Png, "diagram.png")
+    End Sub
+End Module

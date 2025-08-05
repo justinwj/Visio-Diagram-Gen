@@ -8,3 +8,9 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: IMapProvider
+' Purpose: abstract interface for modules that supply diagram items and connections.
+Module IMapProvider
+    Function GetItems() As Collection
+    Function GetConnections() As Collection
+End Module

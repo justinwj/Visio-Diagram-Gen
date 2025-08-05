@@ -8,3 +8,19 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: CallSiteMapProvider
+' Purpose: build diagram elements from discovered call sites.
+Module CallSiteMapProvider
+    Implements IMapProvider
+    Function GetItems() As Collection
+        Dim items As New Collection
+        ' Iterate over call sites discovered by RegexCallScanner
+        ' Convert each call site into a DiagramItem with a unique Id and label
+        Return items
+    End Function
+    Function GetConnections() As Collection
+        Dim conns As New Collection
+        ' Build connections between caller and callee items
+        Return conns
+    End Function
+End Module

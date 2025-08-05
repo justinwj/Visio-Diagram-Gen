@@ -8,3 +8,14 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: DiagramGenerator
+' Purpose: high-level entry point to generate a diagram from source input.
+Module DiagramGenerator
+    Function GenerateFromSource(inputPath As String) As Object
+        Dim cfg As DiagramConfig = ConfigLoader.LoadConfig()
+        Dim pipeline As New Pipeline(cfg)
+        Dim diagram As Object = pipeline.Run(inputPath)
+        LoggingExtensions.LogInfo("Diagram generated successfully.")
+        Return diagram
+    End Function
+End Module

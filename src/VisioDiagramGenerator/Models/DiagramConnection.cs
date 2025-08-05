@@ -8,3 +8,10 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: DiagramConnection
+' Purpose: represent a link between two diagram items.
+Module DiagramConnection
+    Public SourceId As String
+    Public TargetId As String
+    Public ConnectorType As String
+End Module

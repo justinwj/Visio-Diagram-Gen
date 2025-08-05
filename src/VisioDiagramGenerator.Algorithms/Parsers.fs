@@ -9,3 +9,11 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: Parsers
+' Purpose: parse input source into an abstract syntax tree (AST).
+Module Parsers
+    Function ParseFile(path As String) As Object
+        ' Use parsing combinators to build AST from text
+        Return New Object
+    End Function
+End Module

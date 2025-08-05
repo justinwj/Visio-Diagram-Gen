@@ -8,3 +8,9 @@
 // Keep methods short and focused; avoid deep nesting and duplicated code.
 // Use asynchronous programming for I/O-bound tasks when appropriate.
 // See the provided standard and class modules for inspiration and reuse common patterns.
+' Module: ExportFormat
+' Purpose: define constants for supported export formats.
+Module ExportFormat
+    Public Const Png As String = "png"
+    Public Const Vsdx As String = "vsdx"
+End Module
